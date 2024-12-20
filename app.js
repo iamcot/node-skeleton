@@ -7,6 +7,7 @@ const server = createServer(app);
 import pageRoutes from './src/routes/pages.js';
 app.use('/', pageRoutes);
 
-server.listen(80, () => {
+const PORT = 80;
+server.listen(PORT, () => {
     console.log('server started at http://localhost ...');
 });
